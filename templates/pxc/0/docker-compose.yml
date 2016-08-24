@@ -25,7 +25,7 @@ pxc-data:
   environment:
     MYSQL_ALLOW_EMPTY_PASSWORD: "yes"
   volumes:
-    - /var/lib/mysql
+    - "${mysql_volume_data}:/var/lib/mysql"
     - /etc/mysql/conf.d
     - /docker-entrypoint-initdb.d
   command: /bin/true

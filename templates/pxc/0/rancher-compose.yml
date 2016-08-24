@@ -1,6 +1,6 @@
 .catalog:
   name: "Percona XtraDB Cluster"
-  version: 2.0
+  version: 5.6.28-rancher1
   description: |
     Percona XtraDB Cluster 5.6.28
   questions:
@@ -36,7 +36,7 @@
       required: true
       label: "Volume path for mysql data"
       description: ""
-      default: "path_to_volume:/var/www"
+      default: ""
 pxc:
   scale: 3
   health_check:
