@@ -25,9 +25,10 @@ pxc-data:
   environment:
     MYSQL_ALLOW_EMPTY_PASSWORD: "yes"
   volumes:
-    - "${mysql_volume_data}:/var/lib/mysql"
+    - /var/lib/mysql
     - /etc/mysql/conf.d
     - /docker-entrypoint-initdb.d
+    - "${mysql_volume_data}:/var/lib/mysql/mysql"
   command: /bin/true
   labels:
     io.rancher.container.start_once: true    
