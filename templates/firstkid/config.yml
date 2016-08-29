@@ -1,0 +1,5 @@
+name: "FirstKid Deployment"
+version: 1.0.0
+description: |
+    Deploy a new magento store developed on the FirstKid platform
+category: Applications
