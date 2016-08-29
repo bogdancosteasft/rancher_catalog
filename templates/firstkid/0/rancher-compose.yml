@@ -37,12 +37,6 @@
       required: false
       label: "MySQL DB Password"
       description: "Password for the MySQL user of the created database"
-    - variable: "mysql_volume_data"
-      type: string
-      required: true
-      label: "Volume path for mysql data"
-      description: ""
-      default: ""
 php-crontab:
   scale: 1
   health_check:
