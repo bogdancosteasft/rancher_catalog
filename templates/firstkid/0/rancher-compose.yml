@@ -37,6 +37,22 @@
       required: false
       label: "MySQL DB Password"
       description: "Password for the MySQL user of the created database"
+    - variable: "git_autocheckout"
+      type: string
+      required: false
+      label: "Autocheckout from git"
+      description: "Put 1 if you want to autocheckout de code from git"
+      default: "0"
+    - variable: "git_branch"
+      type: string
+      required: false
+      label: "The branch which will be used to checkout the code from"
+      description: "Password for the MySQL user of the created database"
+    - variable: "git_remote"
+      type: string
+      required: false
+      label: "GIT Remote"
+      description: "The git remote"
 php-crontab:
   scale: 1
   health_check:

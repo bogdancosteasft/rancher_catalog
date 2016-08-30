@@ -17,6 +17,10 @@ php-crontab:
 webserver:
   environment:
     WWW_DATA_FOLDER: /data/www/public_html
+    WWW_CHECKOUT_FOLDER: /data/www
+    GIT_AUTO_CHECKOUT: "${git_autocheckout}"
+    GIT_BRANCH: "${git_branch}"
+    GIT_REMOTE: "${git_remote}"
   labels:
     io.rancher.container.pull_image: always
     io.rancher.scheduler.affinity:host_label: webserver=1
