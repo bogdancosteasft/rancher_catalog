@@ -1,8 +1,8 @@
 php-crontab:
   environment:
     WWW_DATA_FOLDER: /data/www/public_html
-    CRONTAB_STOCK_UPDATE: '*/5 * * * * php /data/www/public_html/shell/stockupdate.php --profile
-            firstkid'
+    CRONTAB_STOCK_UPDATE: "*/5 * * * * php /data/www/public_html/shell/stockupdate.php --profile
+            firstkid"
   labels:
     io.rancher.container.pull_image: always
     io.rancher.scheduler.affinity:host_label: webserver=1
