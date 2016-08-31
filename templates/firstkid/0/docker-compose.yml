@@ -1,7 +1,7 @@
 php-crontab:
   environment:
     WWW_DATA_FOLDER: /data/www/public_html
-    CRONTAB_MAGENTO: "php ${WWW_DATA_FOLDER}/cron.php"
+    CRONTAB_MAGENTO: "*/15 * * * * php ${WWW_DATA_FOLDER}/cron.php"
   labels:
     io.rancher.container.pull_image: always
     io.rancher.scheduler.affinity:host_label: webserver=1
